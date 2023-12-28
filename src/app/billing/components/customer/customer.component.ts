@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-customer',
+  selector: 'billing-customer',
   templateUrl: './customer.component.html',
   styleUrls: ['./customer.component.css']
 })

@@ -1,0 +1,13 @@
+<h1>Actividad Economica
+</h1>
+
+<div class="row">
+    <div class="col">
+        <billing-activity-list [activityList]="activitys" (onDelete)="onDeleteActivitys($event)"></billing-activity-list>
+    </div>
+
+    <div class="col">
+        <billing-characteractivity (onNewCharacter)="onNewCharacter($event)"></billing-characteractivity>
+    </div>
+
+</div>

@@ -1,0 +1,11 @@
+<h4>Agregar Actividad</h4>
+<form class="row" (ngSubmit)="emitCharacter()">
+    <input type="text" [(ngModel)]="characterAc.codigo" name="codigo" class="form-control mb-2" placeholder="Codigo">
+    <input type="text" [(ngModel)]="characterAc.descripcion" name="descripcion" class="form-control mb-2" placeholder="Descripcion">
+    <input type="text" [(ngModel)]="characterAc.tipoActividad" name="tp" class="form-control mb-2" placeholder="Tipo Actividad">
+
+    <button type="submit" class="btn btn-primary">
+        Agregar
+            </button>
+
+</form>

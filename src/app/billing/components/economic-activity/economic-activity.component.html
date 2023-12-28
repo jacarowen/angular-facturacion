@@ -1,0 +1,16 @@
+<h4>Lista Actividades</h4>
+<ul class="list-group">
+    <li *ngFor="let activity of activityList; 
+    let i = index; let isFirst=first; let isLast=last; 
+    let isEven = even " class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+            <span class="text-primary">{{ i +1 }}. </span>
+            <span>{{ activity.codigo }} -</span>
+            <strong> Descripcion: </strong>
+            <span>{{ activity.descripcion }}</span>
+        </div>
+        <button class="btn btn-danger" (click)="onDeleteActivity(activity.id)">X</button>
+    </li>
+
+
+</ul>
